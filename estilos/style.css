@@ -3,10 +3,11 @@ root {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3a4f54;
-    background-color: #dfecf1;
-    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(../imagenes/fondov.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {
@@ -36,59 +37,35 @@ body {
     font-family: Kristen ITC, 'Pangolin', cursive;
 }
 
+.formulario_titulo {
+    height: 100px;
+    background-color: lightgray;
+    display: grid;
+    justify-items: center;
+    border-radius: 5px;
+
+}
+
 a {
-    color: #e33b06;
+  /*   color: #e33b06; */
 }
 
 table {
     empty-cells: show;
 }
 
-form.jsfcrud_list_form th, td th {
-    font-size: x-small;
-    color: #4e6a71;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-top-color: #b2d5d6;
-    border-bottom-color: #b2d5d6;
-    border-left-color: #90b4bd;
-    border-right-color: #90b4bd;
-    letter-spacing: 3px;
-    text-align: left;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 6px;
-    padding-right: 6px;
-    background-color: #b2d5d6;
+.formulario {
+    height: 1000px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
 }
-
-td {
-    vertical-align: top;
-    padding-bottom: 8px;
-    font-size: small;
+.formulario input {
+    width: 300px;
 }
-
-form.jsfcrud_list_form td, td td {
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-top-color: #b2d5d6;
-    border-bottom-color: #b2d5d6;
-    border-left-color: #b2d5d6;
-    border-right-color: #b2d5d6;
-    vertical-align: baseline;
-    padding-bottom: 0px;
+.formulario select {
+    width: 300px;
 }
 
 tr.jsfcrud_odd_row {
@@ -108,33 +85,18 @@ tr.jsfcrud_even_row {
     top: 50%;
 }
 
-
-div#contenido {
-border: #d3d3d3 1px solid ;
-margin: 20px 20px 10px 200px;
-padding: 10px 15px;
-}
-#contenido {
-border: #d3d3d3 2px solid ;
-margin: 30px 30px 20px;
-padding: 20px 25px;
-width: 1070px;
-}
-#contenido h2 {
-color: #0075ff;
-border-bottom: #CFBFB5 1px solid;
-}
-
 #menu {
 float: left;
 width: 150px;
-background-color: #D4FFFF;
+list-style: none;
 }
+
 #menu li {
-border: #d3d3d3 3px solid;
-background-color: #0075ff;
+background-color: #109226;
+border-radius: 8px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 margin-bottom: 5px;
-font-size: 0.9em;
+font-size: medium;
 text-align: center;
 line-height: 30px;
 }
@@ -143,7 +105,7 @@ line-height: 30px;
 {
 font-size:1em;
 background-color: #ffffff;
-border:#d3d3d3 1px solid;
+/* border:#d3d3d3 1px solid; */
 text-align: justify;
 margin: 10px auto;
 width : 1300px ;
@@ -155,10 +117,7 @@ text-decoration: none;
 color : #000000;
 }
 #menu li:hover {
-background-color: #7092be;
-}
-#menu li:activa,#menu li:hover {
-background-color: #7092be;
+background-color: #A0CDA2;
 }
 
 .footer {
