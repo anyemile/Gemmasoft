@@ -18,25 +18,24 @@
       </div>
       <img class="header__img" src="../imagenes/Escudo_de_Cundinamarca.svg" alt="Escudo de Cundinamarca">
   </header>
-<div id="contenedor">
-</div>
-<ul id="menu">
+<main class="main"> 
+  <section class="main_menu">
+    <ul>
+      <li><a href="./frmAgregarEstudiante.html">Agregar Estudiante</a> </li>
+      <li><a href="./listarEstudiante.html">Listar Estudiante</a> </li>
+      <li><a href="./frmAgregaracudiente.html">Agregar Acudiente</a> </li>
+      <li><a href="./frmAgregarprofesor.html">Agregar Profesor</a> </li>
+      <li><a href="./frmAgregarsecretaria.html">Agregar Secretaria</a> </li>
+      <li><a href="../index.html">Salir</a> </li>
+    </ul>
+  </section>
 
-  <li><a href="./frmAgregarEstudiante.html">Agregar Estudiante</a> </li>
-  <li><a href="./listarEstudiante.html">Listar Estudiante</a> </li>
-  <li><a href="./frmAgregaracudiente.html">Agregar Acudiente</a> </li>
-  <li><a href="./frmAgregarprofesor.html">Agregar Profesor</a> </li>
-  <li><a href="./frmAgregarsecretaria.html">Agregar Secretaria</a> </li>
-  <li><a href="../index.html">Salir</a> </li>
-</ul>
-
-  <div>
-    <section class="formulario" >
-      <form id="form1" name="form1" method="post" action="./frmAgregarEstudiante.html"></form>
-        <strong class="formulario_titulo">AGREGAR ESTUDIANTE</strong><br>
-        Id Identificacion
+  <section class="main_form" >
+      <form name="form1" method="post" action="./frmAgregarEstudiante.html"></form>
+        <h3><strong id="main_form_title">AGREGAR ESTUDIANTE</strong><br></h3>    
+        <label for="ididentificacion">Id Identificacion</label> 
         <input type="number" name="ididentificacion" id="ididentificacion"><br>
-        Tipo de Identificacion
+        <label for="tidentificacion"> Tipo de Identificacion</label>
         <select name="tidentificacion" id="tidentificacion">
           <option value="0">Seleccione</option>
           <option value="1">NUIP</option>
@@ -45,14 +44,18 @@
           <option value="4">CC</option>
           <option value="5">CE</option>        
         </select><br>
+        <label for="identificacion">Identificacion</label>
+        <input name="identificacion" type="number" id="identificacion"><br>
+        <label for="nombre1">Primer Nombre </label>
+        <input name="nombre1" type="text" id="nombre1" ><br>
+        <label for="nombre2">Segundo Nombre</label>
+        <input name="nombre2" type="text" id="nombre2"><br>
+        <label for="apellido1">Primer Apellido </label>
+        <input name="apellido1" type="text" id="apellido1"><br>
+        <label for="apellido2">Segundo Apellido</label>
+        <input name="apellido2" type="text" id="apellido2"><br>
         
-        Identificacion<input name="identificacion" type="number" id="identificacion"><br>
-        Primer Nombre <input name="nombre1" type="text" id="nombre1" ><br>
-        Segundo Nombre <input name="nombre2" type="text" id="nombre2"><br>
-        Primer Apellido <input name="apellido1" type="text" id="apellido1"><br>
-        Segundo Apellido <input name="apellido2" type="text" id="apellido2"><br>
-        
-        Acudiente 
+        <label for="acudiente ">Acudiente </label>
         <select name="acudiente" id="acudiente">
             <option value="0">Seleccione</option>
             <option value="<br />
@@ -107,50 +110,54 @@
                 <b>Notice</b>:  Undefined property: stdClass::$NoIDENTIFICACION in <b>C:\xampp\htdocs\Gemmasoft\frmAgregarEstudiante.php</b> on line <b>106</b><br />
                 ">JEREMIAS DE JESUS VIDES CASTR0</option>
           </select><br>
-          
-        Telefono<input name="telefono" type="text" id="telefono"><br>
-        Direccion<input name="direccion" type="text" id="direccion"><br>
-        E-mail<input name="email" type="email" id="email"><br>
-        Genero
+        <label for="telefono">Telefono</label> 
+        <input name="telefono" type="text" id="telefono"><br>
+        <label for="direccion">Direccion</label>
+        <input name="direccion" type="text" id="direccion"><br>
+        <label for="email">E-mail</label>
+        <input name="email" type="email" id="email"><br>
+        <label for="genero">Genero</label>
         <select name="genero" id="genero">
                 <option value="0">Seleccione</option>
                 <option value="1">FEMENINO</option>
                 <option value="2">MASCULINO</option>
                 <option value="3">OTRO</option>
         </select><br>
-          Fecha de Nacimiento<input name="fnacimiento" type="date" id="fnacimiento"><br>
-          Tipo de Jornada
+        <label for="fnacimiento">Fecha de Nacimiento</label>
+        <input name="fnacimiento" type="date" id="fnacimiento"><br>
+        <label for="jornada">Tipo de Jornada</label>
           <select name="jornada" id="jornada">
             <option value="0">Seleccione</option>
             <option value="1">DIURNA</option>
             <option value="2">UNICA</option>
             <option value="3">SABATINOS</option>
           </select><br>
-
-        Fecha de Matricula<input name="fmatricula" type="date" id="fmatricula"><br>
-        Tipo de Matricula
+        <label for="fmatricula">Fecha de Matricula</label>
+        <input name="fmatricula" type="date" id="fmatricula"><br>
+        <label for="tmatricula">Tipo de Matricula</label>
         <select name="tmatricula" id="tmatricula">
             <option value="0">Seleccione</option>
             <option value="1">NORMAL</option>
             <option value="2">CONDICIONAL</option>
         </select><br>
-        Edad <input name="edad" type="text" id="edad"><br>
-        Tipo de Sangre
-        <select name="sangre" id="sangre" style="width:262px">
+        <label for="edad">Edad</label>
+        <input name="edad" type="text" id="edad"><br>
+        <label for="sangre">Tipo de Sangre</label>
+        <select name="sangre" id="sangre">
             <option value="0">Seleccione</option>
             <option value="1">A</option>
             <option value="2">B</option>
             <option value="3">O</option>
             <option value="4">AB</option>
         </select><br>
-        Tipo de RH
-        <select name="rh" id="rh" style="width:262px">
+        <label for="rh">Tipo de RH</label>
+        <select name="rh" id="rh">
           <option value="0">Seleccione</option>
           <option value="1">POSITIVO</option>
           <option value="2">NEGATIVO</option>
         </select><br>
-        EPS
-        <select name="eps" id="eps" style="width:262px">
+        <label for="eps">EPS</label>
+        <select name="eps" id="eps">
             <option value="0">Seleccione</option>
             <option value="1">CAFESALUD</option>
             <option value="2">COMEVA</option>
@@ -158,17 +165,16 @@
             <option value="4">ECOOPSOS</option>
             <option value="5">SERVISALUD</option>
         </select><br>      
-        Tipo de EPS
-        <select name="teps" id="teps" style="width:262px">
+        <label for="teps">Tipo de EPS</label>
+        <select name="teps" id="teps">
             <option value="0">Seleccione</option>
             <option value="1">SUBSIDIADO</option>
             <option value="2">CONTRIBUTIVO</option>
             <option value="3">COMPLEMENTARIO</option>
             <option value="4">PREPAGADO</option>
         </select><br>
-        
-        Sede
-        <select name="sede" id="sede" style="width:262px">
+        <label for="sede">Sede</label>
+        <select name="sede" id="sede">
                       <option value="0">Seleccione</option>
                       <option value="1">INSTITUCION EDUCATIVA DEPARTAMENTAL SANTA GEMMA DE GALGANI</option>
                       <option value="2">ESCUELA RURAL MORIELES</option>
@@ -194,14 +200,14 @@
                       <option value="22">CONCENTRACION SIMON BOLIVAR</option>
                       <option value="23">ESCUELA RURAL BARRANQUILLAS</option>
           </select><br>
-        Zona
-        <select name="zona" id="zona" style="width:262px">
+        <label for="zona">Zona</label>
+        <select name="zona" id="zona">
             <option value="0">Seleccione</option>
             <option value="1">URBANA</option>
             <option value="2">RURAL</option>
         </select><br>
-        Curso
-        <select name="curso" id="curso" style="width:262px">
+        <label for="curso">Curso</label>
+        <select name="curso" id="curso">
             <option value="0">Seleccione</option>
                 <option value="1">JARDIN UNO</option>
                   <option value="2">JARDIN DOS</option>
@@ -234,8 +240,7 @@
         <input type="submit" name="submit" id="submit" value="Enviar">
       </form>
      </section>
-    </div>
-  
+</main>  
 
 <footer class="footer"> 
   <p>
