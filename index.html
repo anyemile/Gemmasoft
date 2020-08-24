@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="./imagenes/Iconcol.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1.0; charset=utf-8; text/html">
     <link rel="stylesheet" type="text/css" href="./estilos/main.css">
     <title>Gemmasoft</title>
 </head>
@@ -23,7 +22,18 @@
         </section>
 
         <section>
-           <form class="form" action="./paginas/VistaPrincipal.html" method="POST">       
+            <SCRIPT  language=JavaScript> 
+                function go(){
+                
+                if (document.form.pass.value=='ADMIN' && document.form.USUARIO.value=='ADMIN' && document.form.roles.value=='1'){ 
+                        document.form.submit(); 
+                    } 
+                    else{ 
+                         alert("Porfavor verifique los datos e inténtelo nuevamente"); 
+                    } 
+                } 
+                </SCRIPT> 
+           <form name="form" class="form" action="./paginas/VistaPrincipal.html" >       
                    Ingresa tu usuario<br>
                    <input type="text" name="USUARIO" id="usuario" placeholder="USUARIO" required><br>
                    Ingresa tu contraseña<br>
@@ -38,7 +48,7 @@
                        <option value="5">Estudiante</option>
                    </select>
                    
-                   <input class="boton" type="submit" value="INGRESAR">
+                   <input onclick=go() class="boton" type="button" value="INGRESAR">
                    
            </form> 
         </section>
