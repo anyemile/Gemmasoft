@@ -31,84 +31,122 @@
       <li><a href="../index.html">Salir</a> </li>
     </ul>
   </section>
+
   <section class="main_form" >
     <form id="form1" name="form1" method="post" action="./frmAgregarprofesor.html">
-       <h3>
-         <strong>AGREGAR PROFESOR</strong>
-       </h3>
-      <label for="identificacion">Id identificacion</label>
-      <input name="ididentificacion" type="number" id="ididentificacion"><br>
-      <label for="tidentificacion">Tipo de Identificación</label>
-       <select name="tidentificacion" id="tidentificacion">
-          <option value="0">Seleccione</option>
-		  		<option value="1">NUIP</option>
-					<option value="2">RC</option>
-					<option value="3">TI</option>
-					<option value="4">CC</option>
-          <option value="5">CE</option>
-      </select><br>						  
-      <label for="identificacio">Identificación</label>
-      <input name="identificacion" type="number" id="identificacion"><br>
-      <label for="nombre1">Primer Nombre</label>
-      <input name="nombre1" type="text" id="nombre1"><br>
-      <label for="nombre2"> Segundo Nombre</label>
-      <input name="nombre2" type="text" id="nombre2"><br>
-      <label for="apellido1">Primer Apellido</label>
-      <input name="apellido1" type="text" id="apellido1"><br>
-      <label for="apellido2">Segundo Apellido</label>
-      <input name="apellido2" type="text" id="apellido2"><br>
-      <label for="telefono">Teléfono</label>
-      <input name="telefono" type="text" id="telefono"><br>
-      <label for="direccion">Dirección</label>
-      <input name="direccion" type="text" id="direccion"><br>
-      <label for="email">E-mail</label>
-      <input name="email" type="email" id="email"><br>
-      <label for="genero">Género</label>
-      <select name="genero" id="genero">
+      <h3><strong id="main_title">AGREGAR PROFESOR</strong></h3>
+       <div class="organizador">
+          <label for="identificacion">Id identificacion</label>
+          <input name="ididentificacion" type="number" id="ididentificacion">
+       </div>
+       <div class="organizador">
+          <label for="tidentificacion">Tipo de Identificación</label>
+          <select name="tidentificacion" id="tidentificacion">
+            <option value="0">Seleccione</option>
+            <option value="1">NUIP</option>
+            <option value="2">RC</option>
+            <option value="3">TI</option>
+            <option value="4">CC</option>
+            <option value="5">CE</option>
+          </select>
+       </div>	
+       <div class="organizador">
+          <label for="identificacio">Identificación</label>
+          <input name="identificacion" type="number" id="identificacion">
+      </div>
+      <div class="organizador">  
+          <label for="nombre1">Primer Nombre</label>
+          <input name="nombre1" type="text" id="nombre1">
+      </div>
+      <div class="organizador">    
+          <label for="nombre2"> Segundo Nombre</label>
+          <input name="nombre2" type="text" id="nombre2">
+      </div>
+      <div class="organizador">    
+        <label for="apellido1">Primer Apellido></label>
+        <input name="apellido1" type="text" id="apellido1">
+      </div>
+      <div class="organizador">    
+          <label for="apellido2">Segundo Apellido</label>
+          <input name="apellido2" type="text" id="apellido2">
+        </div>
+      <div class="organizador">    
+        <label for="telefono">Teléfono</label>
+        <input name="telefono" type="text" id="telefono">
+      </div>  
+      <div class="organizador">    
+        <label for="direccion">Dirección</label>
+        <input name="direccion" type="text" id="direccion">
+      </div>
+      <div class="organizador">    
+        <label for="email">E-mail</label>
+        <input name="email" type="email" id="email">
+      </div>  
+      <div class="organizador">  
+        <label for="genero">Género</label>
+        <select name="genero" id="genero">
           <option value="0">Seleccione</option>
 		  		<option value="1">FEMENINO</option>
 					<option value="2">MASCULINO</option>
 					<option value="3">OTRO</option>  
-      </select><br>
-      <label for="fingreso">Fecha de ingreso</label>
-      <input name="fdeingreso" type="date" id="fdeingreso"><br>
-      <label for="fnacimiento">Fecha de nacimiento</label>
-      <input name="fnacimiento" type="date" id="fnacimiento"> <br>
-      <label for="edad">Edad</label>
-      <input name="edad" type="text" id="edad"><br>
-      <label for="sangre">Tipo de sangre</label>
-       <select name="sangre" id="sangre">
+        </select>
+      </div>
+      <div class="organizador">   
+        <label for="fingreso">Fecha de ingreso</label>
+        <input name="fdeingreso" type="date" id="fdeingreso">
+      </div>  
+      <div class="organizador">     
+        <label for="fnacimiento">Fecha de nacimiento</label>
+        <input name="fnacimiento" type="date" id="fnacimiento"> 
+      </div>  
+      <div class="organizador">      
+        <label for="edad">Edad</label>
+        <input name="edad" type="text" id="edad">
+      </div>  
+      <div class="organizador">       
+        <label for="sangre">Tipo de sangre</label>
+        <select name="sangre" id="sangre">
           <option value="0">Seleccione</option>
           <option value="1">A</option>
           <option value="2">B</option>
           <option value="3">O</option>
           <option value="4">AB</option>
-        </select><br>
+        </select>
+      </div>  
+      <div class="organizador">  
         <label for="rh">Tipo de RH</label>
-      <select name="rh" id="rh" style="width:262px">
+        <select name="rh" id="rh" style="width:262px">
           <option value="0">Seleccione</option>
           <option value="1">POSITIVO</option>
           <option value="2">NEGATIVO</option>      
-      </select><br>
-      <label for="eps">EPS</label>
-       <select name="eps" id="eps" style="width:262px">
+        </select>
+      </div>  
+      <div class="organizador">    
+        <label for="eps">EPS</label>
+        <select name="eps" id="eps" style="width:262px">
           <option value="0">Seleccione</option>
           <option value="1">CAFESALUD</option>
           <option value="2">COMEVA</option>
           <option value="3">CONVIDA</option>
           <option value="4">ECOOPSOS</option>
           <option value="5">SERVISALUD</option>
-        </select><br>
-      <label for="teps">Tipo de EPS</label>
-      <select name="teps" id="teps" style="width:262px">
+        </select>
+      </div>  
+      <div class="organizador">    
+        <label for="teps">Tipo de EPS</label>
+        <select name="teps" id="teps">
           <option value="0">Seleccione</option>
           <option value="1">SUBSIDIADO</option>
           <option value="2">CONTRIBUTIVO</option>
           <option value="3">COMPLEMENTARIO</option>
           <option value="4">PREPAGADO</option>
-      </select><br>
-    <input class="boton" type="submit" name="submit" id="submit" value="Enviar">
- </form>
+        </select>
+      </div>  
+      <div class="organizador">  
+        <input class= "boton" type="submit" name="submit" id="submit" value="Enviar">
+      </div> 
+    </form>
+  </section>
 </main>
 
   <footer class="footer"> 
@@ -120,4 +158,6 @@
         Caparrapí – Cundinamarca – República de Colombia
     </p>
   </footer>
+
+</body>
 </html>
