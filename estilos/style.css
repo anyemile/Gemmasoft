@@ -82,13 +82,12 @@ body {
     display: flex;
     justify-content: center;
     font-size: 12px;
-    margin-bottom: 20px;
-    margin-top: 0px;
     padding: 10px;
 }
 
 .main_form input {
-    margin: 0px;
+    display: grid;
+    justify-content: center;
     width: 250px;
     height: 20px;
     border-radius: 6px;
@@ -99,10 +98,9 @@ body {
 .main_form select {
     width: 250px;
     height: 30px;
+    align-content: center;
     border-radius: 6px;
     border: solid gray 2px;
-    margin-bottom: 20px;
-    margin-top: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: medium;
 }
@@ -110,8 +108,8 @@ body {
     width:150px;
     height: 40px;
 }
-.main_form .boton :hover{
-    box-shadow: 5px 10px 10px #D3D5D1
+.main_form .boton :hover {
+    box-shadow: 5px 10px 10px rebeccapurple;
 }
 
 .footer {
