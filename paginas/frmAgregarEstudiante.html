@@ -32,95 +32,138 @@
 
     <section class="main_form" >
       <form name="form1" method="post" action="./frmAgregarEstudiante.html"></form>
-        <h3><strong id="main_form_title">AGREGAR ESTUDIANTE</strong><br></h3>    
-        <label for="ididentificacion">Id Identificacion</label> 
-        <input type="number" name="ididentificacion" id="ididentificacion"><br>
-        <label for="tidentificacion"> Tipo de Identificacion</label>
-        <select name="tidentificacion" id="tidentificacion">
-          <option value="0">Seleccione</option>
-          <option value="1">NUIP</option>
-          <option value="2">RC</option>
-          <option value="3">TI</option>
-          <option value="4">CC</option>
-          <option value="5">CE</option>        
-        </select><br>
-        <label for="identificacion">Identificacion</label>
-        <input name="identificacion" type="number" id="identificacion"><br>
-        <label for="nombre1">Primer Nombre </label>
-        <input name="nombre1" type="text" id="nombre1" ><br>
-        <label for="nombre2">Segundo Nombre</label>
-        <input name="nombre2" type="text" id="nombre2"><br>
-        <label for="apellido1">Primer Apellido </label>
-        <input name="apellido1" type="text" id="apellido1"><br>
-        <label for="apellido2">Segundo Apellido</label>
-        <input name="apellido2" type="text" id="apellido2"><br>  
-        <label for="acudiente ">Acudiente </label>
-        <input name=" acudiente" type="text" id="acudiente" ><br>        
-        <label for="telefono">Telefono</label> 
-        <input name="telefono" type="text" id="telefono"><br>
-        <label for="direccion">Direccion</label>
-        <input name="direccion" type="text" id="direccion"><br>
-        <label for="email">E-mail</label>
-        <input name="email" type="email" id="email"><br>
-        <label for="genero">Genero</label>
-        <select name="genero" id="genero">
-                <option value="0">Seleccione</option>
-                <option value="1">FEMENINO</option>
-                <option value="2">MASCULINO</option>
-                <option value="3">OTRO</option>
-        </select><br>
-        <label for="fnacimiento">Fecha de Nacimiento</label>
-        <input name="fnacimiento" type="date" id="fnacimiento"><br>
-        <label for="jornada">Tipo de Jornada</label>
-        <select name="jornada" id="jornada">
+        <h3><strong id="main_form_title">AGREGAR ESTUDIANTE</strong></h3>
+        <div class="organizador">
+          <label for="ididentificacion">Id Identificacion</label> 
+          <input type="number" name="ididentificacion" id="ididentificacion">
+        </div>
+        <div class="organizador">
+          <label for="tidentificacion"> Tipo de Identificacion</label>
+          <select name="tidentificacion" id="tidentificacion">
             <option value="0">Seleccione</option>
-            <option value="1">DIURNA</option>
-            <option value="2">UNICA</option>
-            <option value="3">SABATINOS</option>
-        </select><br>
-        <label for="fmatricula">Fecha de Matricula</label>
-        <input name="fmatricula" type="date" id="fmatricula"><br>
-        <label for="tmatricula">Tipo de Matricula</label>
-        <select name="tmatricula" id="tmatricula">
-            <option value="0">Seleccione</option>
-            <option value="1">NORMAL</option>
-            <option value="2">CONDICIONAL</option>
-        </select><br>
-        <label for="edad">Edad</label>
-        <input name="edad" type="text" id="edad"><br>
-        <label for="sangre">Tipo de Sangre</label>
-        <select name="sangre" id="sangre">
-            <option value="0">Seleccione</option>
-            <option value="1">A</option>
-            <option value="2">B</option>
-            <option value="3">O</option>
-            <option value="4">AB</option>
-        </select><br>
-        <label for="rh">Tipo de RH</label>
-         <select name="rh" id="rh">
-            <option value="0">Seleccione</option>
-            <option value="1">POSITIVO</option>
-            <option value="2">NEGATIVO</option>
-         </select><br>
-        <label for="eps">EPS</label>
-         <select name="eps" id="eps">
+            <option value="1">NUIP</option>
+            <option value="2">RC</option>
+            <option value="3">TI</option>
+            <option value="4">CC</option>
+            <option value="5">CE</option>        
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="identificacion">Identificacion</label>
+          <input name="identificacion" type="number" id="identificacion">
+        </div>
+        <div class="organizador">
+          <label for="nombre1">Primer Nombre </label>
+          <input name="nombre1" type="text" id="nombre1" >
+        </div>
+        <div class="organizador">
+          <label for="nombre2">Segundo Nombre</label>
+          <input name="nombre2" type="text" id="nombre2">
+        </div>
+        <div class="organizador">
+          <label for="apellido1">Primer Apellido </label>
+          <input name="apellido1" type="text" id="apellido1">
+        </div>
+        <div class="organizador">
+          <label for="apellido2">Segundo Apellido</label>
+          <input name="apellido2" type="text" id="apellido2">
+        </div>
+        <div class="organizador">
+          <label for="acudiente ">Acudiente </label>
+          <input name=" acudiente" type="text" id="acudiente">
+        </div>
+        <div class="organizador">
+          <label for="telefono">Telefono</label> 
+          <input name="telefono" type="text" id="telefono">
+        </div>
+        <div class="organizador">
+          <label for="direccion">Direccion</label>
+          <input name="direccion" type="text" id="direccion">
+        </div>
+        <div class="organizador">
+          <label for="email">E-mail</label>
+          <input name="email" type="email" id="email">
+        </div>
+        <div class="organizador">
+          <label for="genero">Genero</label>
+          <select name="genero" id="genero">
+                  <option value="0">Seleccione</option>
+                  <option value="1">FEMENINO</option>
+                  <option value="2">MASCULINO</option>
+                  <option value="3">OTRO</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="fnacimiento">Fecha de Nacimiento</label>
+          <input name="fnacimiento" type="date" id="fnacimiento">
+        </div>
+        <div class="organizador">
+          <label for="jornada">Tipo de Jornada</label>
+          <select name="jornada" id="jornada">
+              <option value="0">Seleccione</option>
+              <option value="1">DIURNA</option>
+              <option value="2">UNICA</option>
+              <option value="3">SABATINOS</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="fmatricula">Fecha de Matricula</label>
+          <input name="fmatricula" type="date" id="fmatricula">
+        </div>
+        <div class="organizador">
+          <label for="tmatricula">Tipo de Matricula</label>
+          <select name="tmatricula" id="tmatricula">
+              <option value="0">Seleccione</option>
+              <option value="1">NORMAL</option>
+              <option value="2">CONDICIONAL</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="edad">Edad</label>
+          <input name="edad" type="text" id="edad">
+        </div>
+        <div class="organizador">
+          <label for="sangre">Tipo de Sangre</label>
+          <select name="sangre" id="sangre">
+              <option value="0">Seleccione</option>
+              <option value="1">A</option>
+              <option value="2">B</option>
+              <option value="3">O</option>
+              <option value="4">AB</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="rh">Tipo de RH</label>
+          <select name="rh" id="rh">
+              <option value="0">Seleccione</option>
+              <option value="1">POSITIVO</option>
+              <option value="2">NEGATIVO</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="eps">EPS</label>
+          <select name="eps" id="eps">
             <option value="0">Seleccione</option>
             <option value="1">CAFESALUD</option>
             <option value="2">COMEVA</option>
             <option value="3">CONVIDA</option>
             <option value="4">ECOOPSOS</option>
             <option value="5">SERVISALUD</option>
-         </select><br>      
-        <label for="teps">Tipo de EPS</label>
-        <select name="teps" id="teps">
-            <option value="0">Seleccione</option>
-            <option value="1">SUBSIDIADO</option>
-            <option value="2">CONTRIBUTIVO</option>
-            <option value="3">COMPLEMENTARIO</option>
-            <option value="4">PREPAGADO</option>
-        </select><br>
-        <label for="sede">Sede</label>
-         <select name="sede" id="sede">
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="teps">Tipo de EPS</label>
+          <select name="teps" id="teps">
+              <option value="0">Seleccione</option>
+              <option value="1">SUBSIDIADO</option>
+              <option value="2">CONTRIBUTIVO</option>
+              <option value="3">COMPLEMENTARIO</option>
+              <option value="4">PREPAGADO</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="sede">Sede</label>
+          <select name="sede" id="sede">
             <option value="0">Seleccione</option>
             <option value="1">INSTITUCION EDUCATIVA DEPARTAMENTAL SANTA GEMMA DE GALGANI</option>
             <option value="2">ESCUELA RURAL MORIELES</option>
@@ -145,15 +188,19 @@
             <option value="21">JARDIN INFANTIL DEPARTAMENTAL</option>
             <option value="22">CONCENTRACION SIMON BOLIVAR</option>
             <option value="23">ESCUELA RURAL BARRANQUILLAS</option>
-          </select><br>
-        <label for="zona">Zona</label>
-         <select name="zona" id="zona">
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="zona">Zona</label>
+          <select name="zona" id="zona">
             <option value="0">Seleccione</option>
             <option value="1">URBANA</option>
             <option value="2">RURAL</option>
-         </select><br>
-        <label for="curso">Curso</label>
-         <select name="curso" id="curso">
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="curso">Curso</label>
+          <select name="curso" id="curso">
             <option value="0">Seleccione</option>
             <option value="1">JARDIN UNO</option>
             <option value="2">JARDIN DOS</option>
@@ -182,10 +229,13 @@
             <option value="25">DECIMO B</option>
             <option value="26">ONCE A </option>
             <option value="27">ONCE B</option>						  
-         </select><br>
-      <input class= "boton" type="submit" name="submit" id="submit" value="Enviar">
-    </form>
-     </section>
+          </select>
+        </div>
+        <div class="organizador">
+          <input class= "boton" type="submit" name="submit" id="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
   </main>  
 
   <footer class="footer"> 
