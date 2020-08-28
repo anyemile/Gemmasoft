@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../imagenes/Iconcol.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../estilos/style.css">
+    <title>Gemmasoft</title>
+</head>
+
+<body>
+  <header class="header">
+      <img class="header__img" src="../imagenes/Escudocol.svg" alt="Colegio Santa Gemma de Galgani">
+      <div class="header__title">
+          <h1>INSTITUCIÓN EDUCATIVA DEPARTAMENTAL</h1>
+          <h1>SANTA GEMMA DE GALGANI</h1>
+          <h1>CAPARRAPÍ - REPUBLICA DE COLOMBIA</h1>
+      </div>
+      <img class="header__img" src="../imagenes/Escudo_de_Cundinamarca.svg" alt="Escudo de Cundinamarca">
+  </header>
+  <main class="main"> 
+    <section class="main_menu">
+      <ul>
+        <li><a href="./frmAgregarEstudiante.html">Agregar Estudiante</a> </li>
+        <li><a href="./listarEstudiante.html">Listar Estudiante</a> </li>
+        <li><a href="./frmAgregaracudiente.html">Agregar Acudiente</a> </li>
+        <li><a href="./frmAgregarprofesor.html">Agregar Profesor</a> </li>
+        <li><a href="./frmAgregarsecretaria.html">Agregar Secretaria</a> </li>
+        <li><a href="../index.html">Salir</a> </li>
+      </ul>
+    </section>
+
+    <section class="main_form" >
+      <form name="form1" method="post" action="./frmAgregarEstudiante.html"></form>
+        <h3><strong id="main_form_title">AGREGAR ESTUDIANTE</strong></h3>
+        <div class="organizador">
+          <label for="ididentificacion">Id Identificacion</label> 
+          <input type="number" name="ididentificacion" id="ididentificacion">
+        </div>
+        <div class="organizador">
+          <label for="tidentificacion"> Tipo de Identificacion</label>
+          <select name="tidentificacion" id="tidentificacion">
+            <option value="0">Seleccione</option>
+            <option value="1">NUIP</option>
+            <option value="2">RC</option>
+            <option value="3">TI</option>
+            <option value="4">CC</option>
+            <option value="5">CE</option>        
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="identificacion">Identificacion</label>
+          <input name="identificacion" type="number" id="identificacion">
+        </div>
+        <div class="organizador">
+          <label for="nombre1">Primer Nombre </label>
+          <input name="nombre1" type="text" id="nombre1" >
+        </div>
+        <div class="organizador">
+          <label for="nombre2">Segundo Nombre</label>
+          <input name="nombre2" type="text" id="nombre2">
+        </div>
+        <div class="organizador">
+          <label for="apellido1">Primer Apellido </label>
+          <input name="apellido1" type="text" id="apellido1">
+        </div>
+        <div class="organizador">
+          <label for="apellido2">Segundo Apellido</label>
+          <input name="apellido2" type="text" id="apellido2">
+        </div>
+        <div class="organizador">
+          <label for="acudiente ">Acudiente </label>
+          <input name=" acudiente" type="text" id="acudiente">
+        </div>
+        <div class="organizador">
+          <label for="telefono">Telefono</label> 
+          <input name="telefono" type="text" id="telefono">
+        </div>
+        <div class="organizador">
+          <label for="direccion">Direccion</label>
+          <input name="direccion" type="text" id="direccion">
+        </div>
+        <div class="organizador">
+          <label for="email">E-mail</label>
+          <input name="email" type="email" id="email">
+        </div>
+        <div class="organizador">
+          <label for="genero">Genero</label>
+          <select name="genero" id="genero">
+                  <option value="0">Seleccione</option>
+                  <option value="1">FEMENINO</option>
+                  <option value="2">MASCULINO</option>
+                  <option value="3">OTRO</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="fnacimiento">Fecha de Nacimiento</label>
+          <input name="fnacimiento" type="date" id="fnacimiento">
+        </div>
+        <div class="organizador">
+          <label for="jornada">Tipo de Jornada</label>
+          <select name="jornada" id="jornada">
+              <option value="0">Seleccione</option>
+              <option value="1">DIURNA</option>
+              <option value="2">UNICA</option>
+              <option value="3">SABATINOS</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="fmatricula">Fecha de Matricula</label>
+          <input name="fmatricula" type="date" id="fmatricula">
+        </div>
+        <div class="organizador">
+          <label for="tmatricula">Tipo de Matricula</label>
+          <select name="tmatricula" id="tmatricula">
+              <option value="0">Seleccione</option>
+              <option value="1">NORMAL</option>
+              <option value="2">CONDICIONAL</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="edad">Edad</label>
+          <input name="edad" type="text" id="edad">
+        </div>
+        <div class="organizador">
+          <label for="sangre">Tipo de Sangre</label>
+          <select name="sangre" id="sangre">
+              <option value="0">Seleccione</option>
+              <option value="1">A</option>
+              <option value="2">B</option>
+              <option value="3">O</option>
+              <option value="4">AB</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="rh">Tipo de RH</label>
+          <select name="rh" id="rh">
+              <option value="0">Seleccione</option>
+              <option value="1">POSITIVO</option>
+              <option value="2">NEGATIVO</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="eps">EPS</label>
+          <select name="eps" id="eps">
+            <option value="0">Seleccione</option>
+            <option value="1">CAFESALUD</option>
+            <option value="2">COMEVA</option>
+            <option value="3">CONVIDA</option>
+            <option value="4">ECOOPSOS</option>
+            <option value="5">SERVISALUD</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="teps">Tipo de EPS</label>
+          <select name="teps" id="teps">
+              <option value="0">Seleccione</option>
+              <option value="1">SUBSIDIADO</option>
+              <option value="2">CONTRIBUTIVO</option>
+              <option value="3">COMPLEMENTARIO</option>
+              <option value="4">PREPAGADO</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="sede">Sede</label>
+          <select name="sede" id="sede">
+            <option value="0">Seleccione</option>
+            <option value="1">INSTITUCION EDUCATIVA DEPARTAMENTAL SANTA GEMMA DE GALGANI</option>
+            <option value="2">ESCUELA RURAL MORIELES</option>
+            <option value="3">ESCUELA RURAL OTUMBE</option>
+            <option value="4">ESCUELA RURAL CHARCO DE LOS INDIOS</option>
+            <option value="5">ESCUELA RURAL EL ZARBAL</option>
+            <option value="6">ESCUELA RURAL BARRIAL AMARILLO</option>
+            <option value="7">ESCUELA RURAL EL CALICHE</option>
+            <option value="8">ESCUELA RURAL EL CHORRO</option>
+            <option value="9">ESCUELA RURAL EL GUADAL</option>
+            <option value="10">ESCUELA RURAL HOYA DEL CHIPAL</option>
+            <option value="11">ESCUELA RURAL PALENQUE</option>
+            <option value="12">ESCUELA RURAL PARRI</option>
+            <option value="13">ESCUELA RURAL SABANETA</option>
+            <option value="14">ESCUELA RURAL TRAPICHE VIEJO</option>
+            <option value="15">CONCENTRACION RURAL EL CAJON</option>
+            <option value="16">ESCUELA RURAL EL SILENCIO</option>
+            <option value="17">ESCUELA RURAL PALACIOS ALTO</option>
+            <option value="18">ESCUELA RURAL YASAL</option>
+            <option value="19">ESCUELA RURAL PATALINARES</option>
+            <option value="20">ESCUELA RURAL SANTA INES</option>
+            <option value="21">JARDIN INFANTIL DEPARTAMENTAL</option>
+            <option value="22">CONCENTRACION SIMON BOLIVAR</option>
+            <option value="23">ESCUELA RURAL BARRANQUILLAS</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="zona">Zona</label>
+          <select name="zona" id="zona">
+            <option value="0">Seleccione</option>
+            <option value="1">URBANA</option>
+            <option value="2">RURAL</option>
+          </select>
+        </div>
+        <div class="organizador">
+          <label for="curso">Curso</label>
+          <select name="curso" id="curso">
+            <option value="0">Seleccione</option>
+            <option value="1">JARDIN UNO</option>
+            <option value="2">JARDIN DOS</option>
+            <option value="3">PRIMERO A</option>
+            <option value="4">PRIMERO B</option>
+            <option value="5">PRIMERO C</option>
+            <option value="6">SEGUNDO A</option>
+            <option value="7">SEGUNDO B</option>
+            <option value="8">TERCERO A</option>
+            <option value="9">TERCERO B</option>
+            <option value="10">CUARTO A</option>
+            <option value="11">CUARTO B</option>
+            <option value="12">QUINTO A</option>
+            <option value="13">SEXTO A</option>
+            <option value="14">SEXTO B</option>
+            <option value="15">SEXTO C</option>
+            <option value="16">SEPTIMO A</option>
+            <option value="17">SEPTIMO B</option>
+            <option value="18">SEPTIMO C</option>
+            <option value="19">OCTAVO A</option>
+            <option value="20">OCTAVO B</option>
+            <option value="21">OCTAVO C</option>
+            <option value="22">NOVENO A</option>
+            <option value="23">NOVENO B</option>
+            <option value="24">DECIMO A</option>
+            <option value="25">DECIMO B</option>
+            <option value="26">ONCE A </option>
+            <option value="27">ONCE B</option>						  
+          </select>
+        </div>
+        <div class="organizador">
+          <input class= "boton" type="submit" name="submit" id="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
+  </main>  
+
+  <footer class="footer"> 
+    <p>
+        APROBACION  OFICIAL SECRETARÍA DE EDUCACIÓN DE CUNDINAMARCA
+        RESOLUCION No 010552 DE NOVIEMBRE 30 DE 2011 <br>
+    <strong>Somos la simiente de un pueblo digno y emprendedor</strong><br>
+        Barrio “Las Villas” – 311-5650738 -  colsantagemma@hotmail.com <br>
+        Caparrapí – Cundinamarca – República de Colombia
+    </p>
+  </footer>
+
+</body>
+</html>
