@@ -46,17 +46,19 @@ body {
 .main_menu {
     width: 200px;
     margin-top: 50px;
+    
 } 
 .main_menu ul {
     list-style: none;
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
+    border-radius: 10px;
+    background-color: #14371f;
 }
 .main_menu ul li {
     margin-top: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: fantasy;
     font-size: 16px;
-    background-color: green;
     width: 160px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -66,12 +68,12 @@ body {
 }
 
 .main_menu ul :hover {
-    background-color: rgb(129, 197, 129); 
+    background-color: rgb(129, 197,20); 
 }
 
 .main_menu ul li a {
     text-decoration: none;
-    color: black;
+    color:white;
 }
 
 .main_form {
@@ -150,4 +152,10 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     color: #3F7142;
     text-align: center;
+}
+.inicio {
+    background-color: #40916C;
+    padding: 200px;
+    margin: 50px;
+    border: 10px solid white;
 }
